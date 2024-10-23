@@ -5,7 +5,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid red;
     box-sizing: border-box;
 }
 body{
@@ -28,7 +27,7 @@ body{
     list-style: none;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
 }
 .navbar ul li a:hover{
     color: #ee5a5a;
@@ -39,10 +38,10 @@ header {
     display: flex;
     order: 2;
     gap: 5rem;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 header .info-profile{
-    width: 40rem;
+    width: 38rem;
 }
 header .info-profile h1{
     margin-bottom: 15px;
@@ -77,8 +76,8 @@ header .img img {
 /*---------------Premiere section---------------*/
 .first{
     background-color: rgba(127, 255, 212, 0.155);
-    padding-inline: min(20px, 5%);
-    padding-block: 100px;
+    padding-inline: min(100px, 15%);
+    padding-block: 30px 70px;
 }
 .data-of-top{
     display:flex;
