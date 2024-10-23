@@ -5,6 +5,8 @@
 *{
     margin: 0;
     padding: 0;
+    border: 1px solid red;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -13,7 +15,7 @@ body{
 .navbar{
     position: fixed;
     padding:30px;
-    width: 95%;
+    width: 100%;
     background-color: #fff;
 }
 .navbar ul{
@@ -35,7 +37,9 @@ body{
 header {
     padding: 200px 100px 50px 100px;
     display: flex;
+    order: 2;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 header .info-profile{
     width: 40rem;
@@ -73,7 +77,8 @@ header .img img {
 /*---------------Premiere section---------------*/
 .first{
     background-color: rgba(127, 255, 212, 0.155);
-    padding: 20px 100px ;
+    padding-inline: min(20px, 5%);
+    padding-block: 100px;
 }
 .data-of-top{
     display:flex;
@@ -95,11 +100,16 @@ header .img img {
 .card-container{
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .card-post{
     background-color: #fefdfd ;
+    width: 40%;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 1px #00000009;
 }
 .title-card {
     font-size: 30px;
@@ -107,7 +117,10 @@ header .img img {
 }
 .metadata {
     font-size: 16px;
+    width: 60%;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 /*---------------Deuxieme section---------------*/
 .second {
